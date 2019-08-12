@@ -3,6 +3,9 @@ var server = http.createServer(function(req,res){ //Res = Response (Resposta a r
     var categoria = req.url // Aplicando uma variavel que vai servir de filtro
     if(categoria == '/carros'){ // Checa-se o argumento da requisição
         res.end("<html><body>V8 biturbo</body></html>"); // Pagina para requisição
+  
+    }
+    if(categoria=='/adm'){
         console.log("Informações do Server:",server)
     }
     res.end("<html><body>Portal de noticias</body></html>");
