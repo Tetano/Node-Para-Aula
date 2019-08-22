@@ -2,7 +2,7 @@ var http = require('http'); // Requisição HTTP
 var server = http.createServer(function(req,res){ //Res = Response (Resposta a requisição feita ao servidor)
     var categoria = req.url // Aplicando uma variavel que vai servir de filtro
     if(categoria == '/carros'){ // Checa-se o argumento da requisição
-        res.end("<html><body>V8 biturbo</body></html>"); // Pagina para requisição
+        res.end("<html><body><h1>V8 biturbo</h1></body></html>"); // Pagina para requisição
   
     }
     if(categoria=='/adm'){
